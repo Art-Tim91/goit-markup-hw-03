@@ -158,15 +158,14 @@ a {
 }
 
 /* ----Hero----- */
+.hero .container {
+  width: 696px;
+}
 
-.hero {
+.hero.section {
   background-color: var(--hero-background-color);
   text-align: center;
   padding: 200px 0;
-}
-
-.hero .container {
-  width: 696px;
 }
 
 .hero-title {
@@ -211,7 +210,9 @@ a {
   line-height: 1.62;
   display: inline-block;
   cursor: pointer;
-  border: transparent;
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
 }
 
 .filter-list .button:hover,
@@ -235,7 +236,7 @@ a {
   margin-bottom: 50px;
 }
 
-..title-section.feauture {
+.title-section.feauture {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -259,6 +260,9 @@ a {
   margin-bottom: 4px;
 }
 
+.gallery-section .title-section {
+  display: none;
+}
 .work-type {
   font-size: 16px;
   line-height: 1.88;
@@ -269,17 +273,25 @@ a {
 .list-project {
   padding: 20px 24px;
 }
-.feauture-list.title {
+
+.feauture-list .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-  margin-top: 0;
 }
 
 .feauture-list {
   display: flex;
+}
+
+/* .feauture-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
+.feauture-item {
+  margin-bottom: 10px;
 }
 
 .feauture-item:not(:last-child) {
@@ -287,11 +299,13 @@ a {
 }
 
 .feauture-paragraph {
+  width: 270px;
   font-size: 14px;
   line-height: 1.71;
-  display: block;
+  display: inline-block;
   margin: 0;
 }
+
 /* ----Our Work---- */
 
 .section.img-section {
@@ -315,13 +329,14 @@ a {
 
 .team-names {
   padding: 30px 0;
+  text-align: center;
 }
 
 .team-list {
   display: flex;
 }
 
-.team-item:not(last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -377,6 +392,7 @@ a {
   background-color: var(--hero-background-color);
   font-size: 14px;
   line-height: 1.71;
+  padding: 60px 0;
 }
 
 .contacts {
@@ -394,7 +410,7 @@ a {
   color: var(--accent-color);
 }
 
-.address-item:not(last-child) {
+.footer .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -406,8 +422,4 @@ a {
   line-height: 1.19;
   margin-bottom: 20px;
   display: block;
-}
-
-.footer .container {
-  padding: 60px 0;
 }
