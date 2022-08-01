@@ -286,14 +286,6 @@ a {
   display: flex;
 }
 
-/* .feauture-item:not(:last-child) {
-  margin-right: 30px;
-} */
-
-.feauture-item {
-  margin-bottom: 10px;
-}
-
 .feauture-item:not(:last-child) {
   margin-right: 30px;
 }
